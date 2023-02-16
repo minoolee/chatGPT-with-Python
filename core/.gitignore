@@ -1,1 +1,19 @@
-.env
+# Python compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
++.env
+
+# macOS files
+.DS_Store
+
+# SQLite database
+*.sqlite3
+
+# Django compiled messages
+locale/*/LC_MESSAGES/django*.mo
+
+# Static and media files
+staticfiles/
+media/
