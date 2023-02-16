@@ -11,9 +11,9 @@ def chatbot(request):
     if api_key is not None and request.method == 'POST':
         openai.api_key = api_key
         user_input = request.POST.get('user_input')
-        # prompt = user_input
+        prompt = user_input
         # prompt = f"translate this text to spanish: {user_input}"
-        prompt = f"if the question is related to weather - answer it: {user_input}, else sa: Can`t answer this"
+        # prompt = f"if the question is related to weather - answer it: {user_input}, else sa: Can`t answer this"
         response = openai.Completion.create(
             engine = 'text-davinci-003',
             prompt = prompt,
